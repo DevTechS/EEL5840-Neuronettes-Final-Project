@@ -16,11 +16,11 @@ conda install -c conda-forge librosa
 
 ### train.ipynb
 ```python
-# modify paths if needed on line 5
-data_path='training_data_projectB.npy'
-labels_path='training_labels_projectB.npy'
-model_save_path='final_model.pkl'
-sample_rate=48000
+# modify paths if needed at the top of the file
+# or add training data and labels with the following names
+TRAINING_DATA_PATH = 'training_data_projectB.npy'
+TRAINING_LABELS_PATH = 'training_labels_projectB.npy'
+MODEL_PATH = 'final_model.pkl'
 
 # Line 162 - adjust SVM hyperparameters
 param_grid = {
@@ -31,10 +31,10 @@ param_grid = {
 
 ### test.ipynb
 ```python
-#  modify paths if needed on line 7
+# modify paths if needed at the top of the file
+# or add test data and labels with the following names
 TEST_DATA_PATH = 'test_data_projectB.npy'
 TEST_LABELS_PATH = 'test_labels_projectB.npy'
 MODEL_PATH = 'final_model.pkl'
-sample_rate=48000
 ```
 
